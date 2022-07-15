@@ -1,9 +1,7 @@
 defmodule Calc do
   alias :timer, as: Timer
 
-  def squared(x) do
-    x * x
-  end
+  squared = fn(x) -> x * x end
 
   def subtract(x,y) when x >= y do
     IO.puts("processing...")
