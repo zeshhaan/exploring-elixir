@@ -1,11 +1,13 @@
 defmodule Calc do
+  alias :timer, as: Timer
+
   def squared(x) do
     x * x
   end
 
   def subtract(x,y) when x >= y do
     IO.puts("processing...")
-    :timer.sleep(1_000)
+    Timer.sleep(1_000)
     private_subtract(x,y)
   end
 
