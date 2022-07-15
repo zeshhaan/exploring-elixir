@@ -4,6 +4,8 @@ defmodule Calc do
   end
 
   def subtract(x,y) when x >= y do
+    IO.puts("processing...")
+    :timer.sleep(1_000)
     private_subtract(x,y)
   end
 
