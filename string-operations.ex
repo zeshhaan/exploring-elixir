@@ -19,5 +19,7 @@ defmodule StringOps do
     IO.puts String.upcase(longer_str)
     IO.puts String.downcase(longer_str)
     IO.puts String.capitalize(longer_str)
+
+    4 * 10 |> IO.puts
   end
 end
